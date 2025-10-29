@@ -12,8 +12,6 @@ from PIL import Image
 
 dataset = pd.read_csv("diabetes.csv")
 
-dataset.shape
-
 dataset.isnull().sum()
 dataset.duplicated().sum()
 dataset = dataset.drop_duplicates()
